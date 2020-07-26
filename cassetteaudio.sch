@@ -1,0 +1,805 @@
+EESchema Schematic File Version 4
+LIBS:COMIX-35-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3950 4950 5050 4950
+$Comp
+L Device:R_Small_US R?
+U 1 1 69A2A67E
+P 7100 4950
+AR Path="/69A2A67E" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/69A2A67E" Ref="R29"  Part="1" 
+F 0 "R29" V 6895 4950 50  0000 C CNN
+F 1 "1K" V 6986 4950 50  0000 C CNN
+F 2 "Passive:RESA500" H 7100 4950 50  0001 C CNN
+F 3 "~" H 7100 4950 50  0001 C CNN
+F 4 "603-CFR-25JR-521K" H 0   0   50  0001 C CNN "Mouser"
+	1    7100 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 69A2A684
+P 7700 5100
+AR Path="/69A2A684" Ref="C?"  Part="1" 
+AR Path="/69A1B94A/69A2A684" Ref="C34"  Part="1" 
+F 0 "C34" H 7792 5146 50  0000 L CNN
+F 1 "0.33uF" H 7792 5055 50  0000 L CNN
+F 2 "Passive:CAPAC200" H 7700 5100 50  0001 C CNN
+F 3 "~" H 7700 5100 50  0001 C CNN
+F 4 "810-FG28X7R1H334KRT0" H 0   0   50  0001 C CNN "Mouser"
+	1    7700 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 69A2A68A
+P 7300 5100
+AR Path="/69A2A68A" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/69A2A68A" Ref="R30"  Part="1" 
+F 0 "R30" H 7368 5146 50  0000 L CNN
+F 1 "100" H 7368 5055 50  0000 L CNN
+F 2 "Passive:RESA500" H 7300 5100 50  0001 C CNN
+F 3 "~" H 7300 5100 50  0001 C CNN
+F 4 "603-CFR-25JR-52100R" H 0   0   50  0001 C CNN "Mouser"
+	1    7300 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5200 7300 5350
+Wire Wire Line
+	7300 5350 7700 5350
+Wire Wire Line
+	7700 5350 7700 5200
+Wire Wire Line
+	8250 5350 8250 5400
+Connection ~ 7700 5350
+$Comp
+L power:GND #PWR?
+U 1 1 69A2A695
+P 8250 5400
+AR Path="/69A2A695" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/69A2A695" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 8250 5150 50  0001 C CNN
+F 1 "GND" H 8255 5227 50  0000 C CNN
+F 2 "" H 8250 5400 50  0001 C CNN
+F 3 "" H 8250 5400 50  0001 C CNN
+	1    8250 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4950 7300 4950
+Wire Wire Line
+	7300 4950 7300 5000
+Wire Wire Line
+	7300 4950 7700 4950
+Wire Wire Line
+	7700 4950 7700 5000
+Connection ~ 7300 4950
+Wire Wire Line
+	7900 4950 7700 4950
+Connection ~ 7700 4950
+Wire Wire Line
+	8250 5350 7700 5350
+Connection ~ 8250 5350
+Text Label 5000 4950 2    50   ~ 0
+Q
+Text HLabel 3950 4950 0    50   Input ~ 0
+Q
+Wire Wire Line
+	6600 3300 6950 3300
+Text Label 6850 3300 2    50   ~ 0
+~EF4
+$Comp
+L Device:C_Small C?
+U 1 1 69A409D7
+P 4150 3500
+AR Path="/69A409D7" Ref="C?"  Part="1" 
+AR Path="/69A1B94A/69A409D7" Ref="C28"  Part="1" 
+F 0 "C28" H 4242 3546 50  0000 L CNN
+F 1 "1000pF" H 4242 3455 50  0000 L CNN
+F 2 "Passive:CAPAC200" H 4150 3500 50  0001 C CNN
+F 3 "~" H 4150 3500 50  0001 C CNN
+F 4 "810-FG28X7R1H102KNT6" H 0   0   50  0001 C CNN "Mouser"
+	1    4150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 69A409DD
+P 3750 2600
+AR Path="/69A409DD" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/69A409DD" Ref="R26"  Part="1" 
+F 0 "R26" H 3818 2646 50  0000 L CNN
+F 1 "10K" H 3818 2555 50  0000 L CNN
+F 2 "Passive:RESA500" H 3750 2600 50  0001 C CNN
+F 3 "~" H 3750 2600 50  0001 C CNN
+F 4 "603-CFR-25JB-52-10K" H 0   0   50  0001 C CNN "Mouser"
+	1    3750 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 69A409E3
+P 3750 2950
+AR Path="/69A409E3" Ref="RV?"  Part="1" 
+AR Path="/69A1B94A/69A409E3" Ref="RV1"  Part="1" 
+F 0 "RV1" H 3683 2996 50  0000 R CNN
+F 1 "47K" H 3683 2905 50  0000 R CNN
+F 2 "Passive:PIHER_PT10_H01" H 3750 2950 50  0001 C CNN
+F 3 "~" H 3750 2950 50  0001 C CNN
+F 4 "531-PT10LH01473A22S" H 0   0   50  0001 C CNN "Mouser"
+	1    3750 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 69A409E9
+P 3750 3500
+AR Path="/69A409E9" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/69A409E9" Ref="R27"  Part="1" 
+F 0 "R27" H 3818 3546 50  0000 L CNN
+F 1 "10K" H 3800 3450 50  0000 L CNN
+F 2 "Passive:RESA500" H 3750 3500 50  0001 C CNN
+F 3 "~" H 3750 3500 50  0001 C CNN
+F 4 "603-CFR-25JB-52-10K" H 0   0   50  0001 C CNN "Mouser"
+	1    3750 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3600 3750 3650
+Wire Wire Line
+	3750 3650 4150 3650
+Wire Wire Line
+	4150 3650 4150 3600
+Wire Wire Line
+	3750 3400 3750 3100
+Wire Wire Line
+	3750 2800 3750 2700
+Wire Wire Line
+	3750 2500 3750 2450
+$Comp
+L power:+5V #PWR?
+U 1 1 69A409F5
+P 3750 2450
+AR Path="/69A409F5" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/69A409F5" Ref="#PWR0152"  Part="1" 
+F 0 "#PWR0152" H 3750 2300 50  0001 C CNN
+F 1 "+5V" H 3765 2623 50  0000 C CNN
+F 2 "" H 3750 2450 50  0001 C CNN
+F 3 "" H 3750 2450 50  0001 C CNN
+	1    3750 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 69A409FB
+P 3300 3300
+AR Path="/69A409FB" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/69A409FB" Ref="R25"  Part="1" 
+F 0 "R25" V 3095 3300 50  0000 C CNN
+F 1 "1K" V 3186 3300 50  0000 C CNN
+F 2 "Passive:RESA500" H 3300 3300 50  0001 C CNN
+F 3 "~" H 3300 3300 50  0001 C CNN
+F 4 "603-CFR-25JR-521K" H 0   0   50  0001 C CNN "Mouser"
+	1    3300 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 69A40A01
+P 3000 3300
+AR Path="/69A40A01" Ref="C?"  Part="1" 
+AR Path="/69A1B94A/69A40A01" Ref="C27"  Part="1" 
+F 0 "C27" V 2750 3200 50  0000 C CNN
+F 1 "1uF" V 2850 3200 50  0000 C CNN
+F 2 "Passive:CAPAC200" H 3000 3300 50  0001 C CNN
+F 3 "~" H 3000 3300 50  0001 C CNN
+F 4 "810-FG24X7R1H334KNT6" H 0   0   50  0001 C CNN "Mouser"
+	1    3000 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 3300 3200 3300
+Wire Wire Line
+	3400 3300 4000 3300
+Text Notes 4550 3300 2    50   ~ 0
+buf
+Wire Wire Line
+	3900 2950 4000 2950
+Wire Wire Line
+	4000 2950 4000 3300
+Connection ~ 4000 3300
+Wire Wire Line
+	4000 3300 4150 3300
+Wire Wire Line
+	4150 3400 4150 3300
+Connection ~ 4150 3300
+Wire Wire Line
+	4150 3300 4550 3300
+Wire Wire Line
+	4150 3650 4150 3700
+Connection ~ 4150 3650
+$Comp
+L power:GND #PWR?
+U 1 1 69A40A13
+P 4150 3700
+AR Path="/69A40A13" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/69A40A13" Ref="#PWR0153"  Part="1" 
+F 0 "#PWR0153" H 4150 3450 50  0001 C CNN
+F 1 "GND" H 4155 3527 50  0000 C CNN
+F 2 "" H 4150 3700 50  0001 C CNN
+F 3 "" H 4150 3700 50  0001 C CNN
+	1    4150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 69A40A19
+P 2800 3500
+AR Path="/69A40A19" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/69A40A19" Ref="R24"  Part="1" 
+F 0 "R24" H 2732 3454 50  0000 R CNN
+F 1 "DNI" H 2732 3545 50  0000 R CNN
+F 2 "Passive:RESA500" H 2800 3500 50  0001 C CNN
+F 3 "~" H 2800 3500 50  0001 C CNN
+F 4 "DNI" H 0   0   50  0001 C CNN "Mouser"
+	1    2800 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 3300 2800 3300
+Wire Wire Line
+	2800 3300 2800 3400
+Wire Wire Line
+	2800 3600 2800 3650
+$Comp
+L power:GND #PWR?
+U 1 1 69A40A22
+P 2800 3650
+AR Path="/69A40A22" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/69A40A22" Ref="#PWR0154"  Part="1" 
+F 0 "#PWR0154" H 2800 3400 50  0001 C CNN
+F 1 "GND" H 2805 3477 50  0000 C CNN
+F 2 "" H 2800 3650 50  0001 C CNN
+F 3 "" H 2800 3650 50  0001 C CNN
+	1    2800 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 3300
+Wire Wire Line
+	2250 3300 2600 3300
+Wire Wire Line
+	2250 3700 2300 3700
+Wire Wire Line
+	2300 3700 2300 3900
+$Comp
+L power:GND #PWR?
+U 1 1 69A40A32
+P 2300 3900
+AR Path="/69A40A32" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/69A40A32" Ref="#PWR0155"  Part="1" 
+F 0 "#PWR0155" H 2300 3650 50  0001 C CNN
+F 1 "GND" H 2305 3727 50  0000 C CNN
+F 2 "" H 2300 3900 50  0001 C CNN
+F 3 "" H 2300 3900 50  0001 C CNN
+	1    2300 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3300 2600 2500
+Connection ~ 2600 3300
+Wire Wire Line
+	2600 3300 2800 3300
+Text HLabel 6950 3300 2    50   Output ~ 0
+~EF4
+Text HLabel 1400 1150 0    50   Input ~ 0
+SOUND
+Wire Wire Line
+	1400 1150 2150 1150
+$Comp
+L 74xx:74LS14 U?
+U 3 1 6A448641
+P 4850 3300
+AR Path="/698D75DA/6A448641" Ref="U?"  Part="2" 
+AR Path="/69A1B94A/6A448641" Ref="U8"  Part="3" 
+F 0 "U8" H 4850 3617 50  0000 C CNN
+F 1 "74HC14" H 4850 3526 50  0000 C CNN
+F 2 "Active:DIP254P762X635-14" H 4850 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 4850 3300 50  0001 C CNN
+F 4 "595-SN74HC14N" H 0   0   50  0001 C CNN "Mouser"
+	3    4850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U?
+U 4 1 6A448E86
+P 5650 3300
+AR Path="/698D75DA/6A448E86" Ref="U?"  Part="2" 
+AR Path="/69A1B94A/6A448E86" Ref="U8"  Part="4" 
+F 0 "U8" H 5650 3617 50  0000 C CNN
+F 1 "74HC14" H 5650 3526 50  0000 C CNN
+F 2 "Active:DIP254P762X635-14" H 5650 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 5650 3300 50  0001 C CNN
+F 4 "595-SN74HC14N" H 0   0   50  0001 C CNN "Mouser"
+	4    5650 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 3300 5200 3300
+$Comp
+L 74xx:74LS14 U?
+U 5 1 6A44EC24
+P 5350 4950
+AR Path="/698D75DA/6A44EC24" Ref="U?"  Part="2" 
+AR Path="/69A1B94A/6A44EC24" Ref="U8"  Part="5" 
+F 0 "U8" H 5350 5267 50  0000 C CNN
+F 1 "74HC14" H 5350 5176 50  0000 C CNN
+F 2 "Active:DIP254P762X635-14" H 5350 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 5350 4950 50  0001 C CNN
+F 4 "595-SN74HC14N" H 0   0   50  0001 C CNN "Mouser"
+	5    5350 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS14 U?
+U 6 1 6A44F4CD
+P 6050 4950
+AR Path="/698D75DA/6A44F4CD" Ref="U?"  Part="2" 
+AR Path="/69A1B94A/6A44F4CD" Ref="U8"  Part="6" 
+F 0 "U8" H 6050 5267 50  0000 C CNN
+F 1 "74HC14" H 6050 5176 50  0000 C CNN
+F 2 "Active:DIP254P762X635-14" H 6050 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS14" H 6050 4950 50  0001 C CNN
+F 4 "595-SN74HC14N" H 0   0   50  0001 C CNN "Mouser"
+	6    6050 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4950 5750 4950
+Wire Wire Line
+	6350 4950 7000 4950
+$Comp
+L Amplifier_Audio:LM386 U17
+U 1 1 6A45706E
+P 5950 1550
+F 0 "U17" H 6294 1596 50  0000 L CNN
+F 1 "LM386" H 6294 1505 50  0000 L CNN
+F 2 "Active:DIP254P762X635-8" H 6050 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm386.pdf" H 6150 1750 50  0001 C CNN
+F 4 "926-LM386N-4/NOPB" H 0   0   50  0001 C CNN "Mouser"
+	1    5950 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1650 5450 1650
+Wire Wire Line
+	5450 1650 5450 1750
+$Comp
+L Device:C_Small C?
+U 1 1 6A458DD4
+P 5450 1850
+AR Path="/6A458DD4" Ref="C?"  Part="1" 
+AR Path="/69A1B94A/6A458DD4" Ref="C30"  Part="1" 
+F 0 "C30" H 5542 1896 50  0000 L CNN
+F 1 "0.1uF" H 5542 1805 50  0000 L CNN
+F 2 "Passive:CAPAC200" H 5450 1850 50  0001 C CNN
+F 3 "~" H 5450 1850 50  0001 C CNN
+F 4 "581-SA105E104M" H 0   0   50  0001 C CNN "Mouser"
+	1    5450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 6A45989F
+P 5050 1450
+AR Path="/6A45989F" Ref="RV?"  Part="1" 
+AR Path="/69A1B94A/6A45989F" Ref="RV2"  Part="1" 
+F 0 "RV2" H 4983 1496 50  0000 R CNN
+F 1 "10K" H 4983 1405 50  0000 R CNN
+F 2 "Passive:PIHER_PT10_H01" H 5050 1450 50  0001 C CNN
+F 3 "~" H 5050 1450 50  0001 C CNN
+F 4 "531-PT10H-10K-S" H 0   0   50  0001 C CNN "Mouser"
+	1    5050 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1600 5050 1950
+Wire Wire Line
+	5200 1450 5650 1450
+Wire Wire Line
+	5850 1850 5850 1950
+Wire Wire Line
+	5850 1950 5700 1950
+Wire Wire Line
+	5700 1950 5700 2150
+Wire Wire Line
+	5450 1950 5450 2150
+NoConn ~ 5950 1850
+NoConn ~ 6050 1850
+Wire Wire Line
+	5950 1250 5950 950 
+Wire Wire Line
+	5950 950  6150 950 
+$Comp
+L Device:CP_Small C31
+U 1 1 6A460AEC
+P 6150 1100
+F 0 "C31" H 6238 1146 50  0000 L CNN
+F 1 "10uF" H 6238 1055 50  0000 L CNN
+F 2 "Passive:CAPAE250P630X1100" H 6150 1100 50  0001 C CNN
+F 3 "~" H 6150 1100 50  0001 C CNN
+F 4 "667-ECA-1CM100I" H 0   0   50  0001 C CNN "Mouser"
+	1    6150 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 1000 6150 950 
+Wire Wire Line
+	6150 1200 6150 1250
+$Comp
+L power:GND #PWR?
+U 1 1 6A4633B4
+P 5050 1950
+AR Path="/6A4633B4" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/6A4633B4" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 5050 1700 50  0001 C CNN
+F 1 "GND" H 5055 1777 50  0000 C CNN
+F 2 "" H 5050 1950 50  0001 C CNN
+F 3 "" H 5050 1950 50  0001 C CNN
+	1    5050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6A463AD9
+P 5450 2150
+AR Path="/6A463AD9" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/6A463AD9" Ref="#PWR0161"  Part="1" 
+F 0 "#PWR0161" H 5450 1900 50  0001 C CNN
+F 1 "GND" H 5455 1977 50  0000 C CNN
+F 2 "" H 5450 2150 50  0001 C CNN
+F 3 "" H 5450 2150 50  0001 C CNN
+	1    5450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6A463E9C
+P 5700 2150
+AR Path="/6A463E9C" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/6A463E9C" Ref="#PWR0162"  Part="1" 
+F 0 "#PWR0162" H 5700 1900 50  0001 C CNN
+F 1 "GND" H 5705 1977 50  0000 C CNN
+F 2 "" H 5700 2150 50  0001 C CNN
+F 3 "" H 5700 2150 50  0001 C CNN
+	1    5700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6A4640E9
+P 6150 1250
+AR Path="/6A4640E9" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/6A4640E9" Ref="#PWR0163"  Part="1" 
+F 0 "#PWR0163" H 6150 1000 50  0001 C CNN
+F 1 "GND" H 6155 1077 50  0000 C CNN
+F 2 "" H 6150 1250 50  0001 C CNN
+F 3 "" H 6150 1250 50  0001 C CNN
+	1    6150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1250 5850 850 
+$Comp
+L Device:C_Small C?
+U 1 1 6A4659EA
+P 5400 1000
+AR Path="/6A4659EA" Ref="C?"  Part="1" 
+AR Path="/69A1B94A/6A4659EA" Ref="C29"  Part="1" 
+F 0 "C29" H 5492 1046 50  0000 L CNN
+F 1 "0.1uF" H 5492 955 50  0000 L CNN
+F 2 "Passive:CAPAC200" H 5400 1000 50  0001 C CNN
+F 3 "~" H 5400 1000 50  0001 C CNN
+F 4 "581-SA105E104M" H 0   0   50  0001 C CNN "Mouser"
+	1    5400 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6A465D7E
+P 5400 1150
+AR Path="/6A465D7E" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/6A465D7E" Ref="#PWR0164"  Part="1" 
+F 0 "#PWR0164" H 5400 900 50  0001 C CNN
+F 1 "GND" H 5405 977 50  0000 C CNN
+F 2 "" H 5400 1150 50  0001 C CNN
+F 3 "" H 5400 1150 50  0001 C CNN
+	1    5400 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 1100 5400 1150
+Wire Wire Line
+	5400 900  5400 850 
+Wire Wire Line
+	5400 850  5850 850 
+Wire Wire Line
+	5850 750  5850 850 
+Connection ~ 5850 850 
+Wire Wire Line
+	6250 1550 6600 1550
+$Comp
+L Device:C_Small C?
+U 1 1 6A46AEE5
+P 6600 1750
+AR Path="/6A46AEE5" Ref="C?"  Part="1" 
+AR Path="/69A1B94A/6A46AEE5" Ref="C32"  Part="1" 
+F 0 "C32" H 6692 1796 50  0000 L CNN
+F 1 "0.047uF" H 6692 1705 50  0000 L CNN
+F 2 "Passive:CAPAC200" H 6600 1750 50  0001 C CNN
+F 3 "~" H 6600 1750 50  0001 C CNN
+F 4 "810-FA28X7R1H47300" H 0   0   50  0001 C CNN "Mouser"
+	1    6600 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6A46B9FF
+P 6600 2000
+AR Path="/6A46B9FF" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/6A46B9FF" Ref="R28"  Part="1" 
+F 0 "R28" H 6668 2046 50  0000 L CNN
+F 1 "10" H 6668 1955 50  0000 L CNN
+F 2 "Passive:RESA500" H 6600 2000 50  0001 C CNN
+F 3 "~" H 6600 2000 50  0001 C CNN
+F 4 "603-CFR-25JR-5210R" H 0   0   50  0001 C CNN "Mouser"
+	1    6600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1850 6600 1900
+Wire Wire Line
+	6600 2100 6600 2150
+$Comp
+L power:GND #PWR?
+U 1 1 6A46E96E
+P 6600 2150
+AR Path="/6A46E96E" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/6A46E96E" Ref="#PWR0165"  Part="1" 
+F 0 "#PWR0165" H 6600 1900 50  0001 C CNN
+F 1 "GND" H 6605 1977 50  0000 C CNN
+F 2 "" H 6600 2150 50  0001 C CNN
+F 3 "" H 6600 2150 50  0001 C CNN
+	1    6600 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 1650 6600 1550
+Connection ~ 6600 1550
+Wire Wire Line
+	6600 1550 6700 1550
+$Comp
+L Device:CP_Small C33
+U 1 1 6A47028E
+P 6800 1550
+F 0 "C33" V 7025 1550 50  0000 C CNN
+F 1 "220uF" V 6934 1550 50  0000 C CNN
+F 2 "Passive:CAPAE250P630X1100" H 6800 1550 50  0001 C CNN
+F 3 "~" H 6800 1550 50  0001 C CNN
+F 4 "647-UVY1E221MED1TD" H 0   0   50  0001 C CNN "Mouser"
+	1    6800 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6900 1550 7500 1550
+Wire Wire Line
+	7500 1650 7300 1650
+Wire Wire Line
+	7300 1650 7300 2000
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 6A47502C
+P 7700 1550
+F 0 "J5" H 7780 1542 50  0000 L CNN
+F 1 "Conn_01x02" H 7780 1451 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7700 1550 50  0001 C CNN
+F 3 "~" H 7700 1550 50  0001 C CNN
+	1    7700 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6A475A4E
+P 7300 2000
+AR Path="/6A475A4E" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/6A475A4E" Ref="#PWR0166"  Part="1" 
+F 0 "#PWR0166" H 7300 1750 50  0001 C CNN
+F 1 "GND" H 7305 1827 50  0000 C CNN
+F 2 "" H 7300 2000 50  0001 C CNN
+F 3 "" H 7300 2000 50  0001 C CNN
+	1    7300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6A478E0B
+P 2250 1150
+AR Path="/6A478E0B" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/6A478E0B" Ref="R22"  Part="1" 
+F 0 "R22" V 2045 1150 50  0000 C CNN
+F 1 "10K" V 2136 1150 50  0000 C CNN
+F 2 "Passive:RESA500" H 2250 1150 50  0001 C CNN
+F 3 "~" H 2250 1150 50  0001 C CNN
+F 4 "603-CFR-25JB-52-10K" H 0   0   50  0001 C CNN "Mouser"
+	1    2250 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6A47AC94
+P 2600 2400
+AR Path="/6A47AC94" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/6A47AC94" Ref="R23"  Part="1" 
+F 0 "R23" H 2668 2446 50  0000 L CNN
+F 1 "1M" H 2668 2355 50  0000 L CNN
+F 2 "Passive:RESA500" H 2600 2400 50  0001 C CNN
+F 3 "~" H 2600 2400 50  0001 C CNN
+F 4 "603-CFR-25JR-521M" H 0   0   50  0001 C CNN "Mouser"
+	1    2600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2300 2600 1150
+Wire Wire Line
+	2600 1150 2350 1150
+Wire Wire Line
+	2600 1150 5050 1150
+Wire Wire Line
+	5050 1150 5050 1300
+Connection ~ 2600 1150
+$Comp
+L power:+5V #PWR0167
+U 1 1 6A7EA349
+P 5850 750
+F 0 "#PWR0167" H 5850 600 50  0001 C CNN
+F 1 "+5V" H 5865 923 50  0000 C CNN
+F 2 "" H 5850 750 50  0001 C CNN
+F 3 "" H 5850 750 50  0001 C CNN
+	1    5850 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C35
+U 1 1 6B643445
+P 8000 4950
+F 0 "C35" V 8225 4950 50  0000 C CNN
+F 1 "10uF" V 8134 4950 50  0000 C CNN
+F 2 "Passive:CAPAE250P630X1100" H 8000 4950 50  0001 C CNN
+F 3 "~" H 8000 4950 50  0001 C CNN
+F 4 "667-ECA-1CM100I" H 0   0   50  0001 C CNN "Mouser"
+	1    8000 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L connectors:SJ1-353XN J6
+U 1 1 6B64E159
+P 8750 5450
+F 0 "J6" H 8967 4703 60  0000 C CNN
+F 1 "MIC" H 8967 4809 60  0000 C CNN
+F 2 "Conn:CUI_SJ1-353XN" H 9328 5022 60  0001 L CNN
+F 3 "" H 8750 5450 60  0000 C CNN
+F 4 "490-SJ1-3533NG" H 0   0   50  0001 C CNN "Mouser"
+	1    8750 5450
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8100 4950 8650 4950
+Wire Wire Line
+	8250 5350 8650 5350
+NoConn ~ 8650 5050
+NoConn ~ 8650 5150
+NoConn ~ 8650 5250
+$Comp
+L connectors:SJ1-353XN J4
+U 1 1 6B65CFD7
+P 2150 3800
+F 0 "J4" H 2367 3053 60  0000 C CNN
+F 1 "EAR" H 2367 3159 60  0000 C CNN
+F 2 "Conn:CUI_SJ1-353XN" H 2728 3372 60  0001 L CNN
+F 3 "" H 2150 3800 60  0000 C CNN
+F 4 "490-SJ1-3533NG" H 0   0   50  0001 C CNN "Mouser"
+	1    2150 3800
+	-1   0    0    1   
+$EndComp
+NoConn ~ 2250 3400
+NoConn ~ 2250 3500
+NoConn ~ 2250 3600
+$Comp
+L Device:D_Small_ALT D?
+U 1 1 6BE56C80
+P 6500 3300
+AR Path="/6BE56C80" Ref="D?"  Part="1" 
+AR Path="/698D75DA/6BE56C80" Ref="D?"  Part="1" 
+AR Path="/69A1B94A/6BE56C80" Ref="D5"  Part="1" 
+F 0 "D5" H 6500 3550 50  0000 C CNN
+F 1 "1N4148" H 6500 3450 50  0000 C CNN
+F 2 "Passive:DIOA500" V 6500 3300 50  0001 C CNN
+F 3 "~" V 6500 3300 50  0001 C CNN
+F 4 "512-1N4148" H 0   0   50  0001 C CNN "Mouser"
+	1    6500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3300 5950 3300
+$Comp
+L Device:R_Small_US R?
+U 1 1 5F1B2CFF
+P 5200 3600
+AR Path="/5F1B2CFF" Ref="R?"  Part="1" 
+AR Path="/698D75DA/5F1B2CFF" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/5F1B2CFF" Ref="R7"  Part="1" 
+F 0 "R7" H 5132 3554 50  0000 R CNN
+F 1 "220" H 5132 3645 50  0000 R CNN
+F 2 "Passive:RESA500" H 5200 3600 50  0001 C CNN
+F 3 "~" H 5200 3600 50  0001 C CNN
+F 4 "603-CFR-25JR-52220R" H 0   0   50  0001 C CNN "Mouser"
+	1    5200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F1B2D05
+P 5200 4100
+AR Path="/5F1B2D05" Ref="#PWR?"  Part="1" 
+AR Path="/69A1B94A/5F1B2D05" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 5200 3850 50  0001 C CNN
+F 1 "GND" H 5205 3927 50  0000 C CNN
+F 2 "" H 5200 4100 50  0001 C CNN
+F 3 "" H 5200 4100 50  0001 C CNN
+	1    5200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small_ALT D?
+U 1 1 5F1B2D0B
+P 5200 3900
+AR Path="/5F1B2D0B" Ref="D?"  Part="1" 
+AR Path="/69A1B94A/5F1B2D0B" Ref="D6"  Part="1" 
+F 0 "D6" V 5246 3832 50  0000 R CNN
+F 1 "DATA" V 5155 3832 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" V 5200 3900 50  0001 C CNN
+F 3 "~" V 5200 3900 50  0001 C CNN
+F 4 "859-LTL-4213" H 0   0   50  0001 C CNN "Mouser"
+	1    5200 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3700 5200 3800
+Wire Wire Line
+	5200 4000 5200 4100
+Wire Wire Line
+	5200 3500 5200 3300
+Connection ~ 5200 3300
+Wire Wire Line
+	5200 3300 5350 3300
+Text Notes 9050 7100 0    50   ~ 0
+This work is licensed under the Creative Commons\nAttribution-ShareAlike 4.0 International License.\nTo view a copy of this license, visit \nhttp://creativecommons.org/licenses/by-sa/4.0/\nor send a letter to Creative Commons, PO Box 1866,\nMountain View, CA 94042, USA.
+Text Notes 7050 6750 0    100  ~ 20
+COMIX-35
+Text Notes 7050 6950 0    50   ~ 0
+Cassette Interface Section\nBy @TubeTimeUS
+$EndSCHEMATC

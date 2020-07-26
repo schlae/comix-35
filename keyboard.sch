@@ -1,0 +1,1755 @@
+EESchema Schematic File Version 4
+LIBS:COMIX-35-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L misc_ic:CDP1871 U?
+U 1 1 672701E5
+P 3700 2350
+AR Path="/672701E5" Ref="U?"  Part="1" 
+AR Path="/6718B9F6/672701E5" Ref="U9"  Part="1" 
+F 0 "U9" H 4250 2550 50  0000 C CNN
+F 1 "CDP1871" H 4350 2450 50  0000 C CNN
+F 2 "Active:DIP254P1524X635-40" H 4300 2750 50  0001 C CNN
+F 3 "" H 4300 2750 50  0001 C CNN
+	1    3700 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2650 3350 2650
+Text Label 3350 2650 0    50   ~ 0
+BUS0
+Wire Wire Line
+	3600 2750 3350 2750
+Text Label 3350 2750 0    50   ~ 0
+BUS1
+Wire Wire Line
+	3600 2850 3350 2850
+Text Label 3350 2850 0    50   ~ 0
+BUS2
+Wire Wire Line
+	3600 2950 3350 2950
+Text Label 3350 2950 0    50   ~ 0
+BUS3
+Wire Wire Line
+	3600 3050 3350 3050
+Text Label 3350 3050 0    50   ~ 0
+BUS4
+Wire Wire Line
+	3600 3150 3350 3150
+Text Label 3350 3150 0    50   ~ 0
+BUS5
+Wire Wire Line
+	3600 3250 3350 3250
+Text Label 3350 3250 0    50   ~ 0
+BUS6
+Wire Wire Line
+	3600 3350 3350 3350
+Text Label 3350 3350 0    50   ~ 0
+BUS7
+Wire Wire Line
+	3600 2450 2400 2450
+Text Label 3400 2450 0    50   ~ 0
+TPB
+Wire Wire Line
+	3600 3550 2400 3550
+Text Label 3350 3550 0    50   ~ 0
+~MRD
+Wire Wire Line
+	3600 3650 2950 3650
+Wire Wire Line
+	2950 3650 2950 3300
+Wire Wire Line
+	3600 3750 2950 3750
+Wire Wire Line
+	2950 3750 2950 3650
+Connection ~ 2950 3650
+$Comp
+L power:+5V #PWR?
+U 1 1 67270206
+P 2950 3300
+AR Path="/67270206" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/67270206" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 2950 3150 50  0001 C CNN
+F 1 "+5V" H 2965 3473 50  0000 C CNN
+F 2 "" H 2950 3300 50  0001 C CNN
+F 3 "" H 2950 3300 50  0001 C CNN
+	1    2950 3300
+	1    0    0    -1  
+$EndComp
+Text Label 3350 3850 0    50   ~ 0
+~N=3
+Wire Wire Line
+	3600 4050 2400 4050
+Text Label 3250 4050 0    50   ~ 0
+~RTP
+Text Label 3250 4150 0    50   ~ 0
+~DA
+Wire Wire Line
+	4100 4850 4100 4900
+$Comp
+L power:GND #PWR?
+U 1 1 67270212
+P 4100 4900
+AR Path="/67270212" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/67270212" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 4100 4650 50  0001 C CNN
+F 1 "GND" H 4105 4727 50  0000 C CNN
+F 2 "" H 4100 4900 50  0001 C CNN
+F 3 "" H 4100 4900 50  0001 C CNN
+	1    4100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 67270218
+P 4100 2200
+AR Path="/67270218" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/67270218" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 4100 2050 50  0001 C CNN
+F 1 "+5V" H 4115 2373 50  0000 C CNN
+F 2 "" H 4100 2200 50  0001 C CNN
+F 3 "" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2200 4100 2250
+Wire Wire Line
+	2400 3850 3600 3850
+Entry Wire Line
+	3250 2550 3350 2650
+Entry Wire Line
+	3250 2650 3350 2750
+Entry Wire Line
+	3250 2750 3350 2850
+Entry Wire Line
+	3250 2850 3350 2950
+Entry Wire Line
+	3250 2950 3350 3050
+Entry Wire Line
+	3250 3050 3350 3150
+Entry Wire Line
+	3250 3150 3350 3250
+Entry Wire Line
+	3250 3250 3350 3350
+Wire Bus Line
+	3250 2550 2400 2550
+Wire Wire Line
+	2400 4150 3600 4150
+Text HLabel 2400 2450 0    50   Input ~ 0
+TPB
+Text HLabel 2400 2550 0    50   BiDi ~ 0
+BUS[0..7]
+Text HLabel 2400 3550 0    50   Input ~ 0
+~MRD
+Text HLabel 2400 3850 0    50   Input ~ 0
+~N=3
+Text HLabel 2400 4050 0    50   Output ~ 0
+~RTP
+Text HLabel 2400 4150 0    50   Output ~ 0
+~DA
+Text HLabel 2300 5000 0    50   UnSpc ~ 0
+~KBDRST
+$Comp
+L Switch:SW_Push_45deg SW5
+U 1 1 6A7ECED7
+P 6850 2100
+F 0 "SW5" H 6850 2381 50  0000 C CNN
+F 1 "0" H 6850 2290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 2100 50  0001 C CNN
+F 3 "~" H 6850 2100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW13
+U 1 1 6A7EEBA4
+P 7150 2100
+F 0 "SW13" H 7150 2381 50  0000 C CNN
+F 1 "8" H 7150 2290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 2100 50  0001 C CNN
+F 3 "~" H 7150 2100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 2100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2200 6750 2250
+Connection ~ 6750 2250
+Wire Wire Line
+	6750 2250 7050 2250
+Wire Wire Line
+	7050 2200 7050 2250
+Connection ~ 7050 2250
+$Comp
+L Switch:SW_Push_45deg SW21
+U 1 1 6A7F451D
+P 7450 2100
+F 0 "SW21" H 7450 2381 50  0000 C CNN
+F 1 "?" H 7450 2290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 2100 50  0001 C CNN
+F 3 "~" H 7450 2100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW29
+U 1 1 6A7F4527
+P 7750 2100
+F 0 "SW29" H 7750 2381 50  0000 C CNN
+F 1 "H" H 7750 2290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 2100 50  0001 C CNN
+F 3 "~" H 7750 2100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW37
+U 1 1 6A7F5832
+P 8050 2100
+F 0 "SW37" H 8050 2381 50  0000 C CNN
+F 1 "P" H 8050 2290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 2100 50  0001 C CNN
+F 3 "~" H 8050 2100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW45
+U 1 1 6A7F583C
+P 8350 2100
+F 0 "SW45" H 8350 2381 50  0000 C CNN
+F 1 "X" H 8350 2290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8350 2100 50  0001 C CNN
+F 3 "~" H 8350 2100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW53
+U 1 1 6A7F5846
+P 8650 2100
+F 0 "SW53" H 8650 2381 50  0000 C CNN
+F 1 "CR" H 8650 2290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX_150" H 8650 2100 50  0001 C CNN
+F 3 "~" H 8650 2100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 2100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW6
+U 1 1 6A7F78ED
+P 6850 2600
+F 0 "SW6" H 6850 2881 50  0000 C CNN
+F 1 "1" H 6850 2790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 2600 50  0001 C CNN
+F 3 "~" H 6850 2600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW14
+U 1 1 6A7F78F7
+P 7150 2600
+F 0 "SW14" H 7150 2881 50  0000 C CNN
+F 1 "9" H 7150 2790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 2600 50  0001 C CNN
+F 3 "~" H 7150 2600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW22
+U 1 1 6A7F7901
+P 7450 2600
+F 0 "SW22" H 7450 2881 50  0000 C CNN
+F 1 "A" H 7450 2790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 2600 50  0001 C CNN
+F 3 "~" H 7450 2600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW30
+U 1 1 6A7F790B
+P 7750 2600
+F 0 "SW30" H 7750 2881 50  0000 C CNN
+F 1 "I" H 7750 2790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 2600 50  0001 C CNN
+F 3 "~" H 7750 2600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW38
+U 1 1 6A7F7915
+P 8050 2600
+F 0 "SW38" H 8050 2881 50  0000 C CNN
+F 1 "Q" H 8050 2790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 2600 50  0001 C CNN
+F 3 "~" H 8050 2600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW46
+U 1 1 6A7F791F
+P 8350 2600
+F 0 "SW46" H 8350 2881 50  0000 C CNN
+F 1 "Y" H 8350 2790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8350 2600 50  0001 C CNN
+F 3 "~" H 8350 2600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW54
+U 1 1 6A7F7929
+P 8650 2600
+F 0 "SW54" H 8650 2881 50  0000 C CNN
+F 1 "ESC" H 8650 2790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8650 2600 50  0001 C CNN
+F 3 "~" H 8650 2600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW7
+U 1 1 6A7FAD44
+P 6850 3100
+F 0 "SW7" H 6850 3381 50  0000 C CNN
+F 1 "2" H 6850 3290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 3100 50  0001 C CNN
+F 3 "~" H 6850 3100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW15
+U 1 1 6A7FAD4E
+P 7150 3100
+F 0 "SW15" H 7150 3381 50  0000 C CNN
+F 1 "." H 7150 3290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 3100 50  0001 C CNN
+F 3 "~" H 7150 3100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW23
+U 1 1 6A7FAD58
+P 7450 3100
+F 0 "SW23" H 7450 3381 50  0000 C CNN
+F 1 "B" H 7450 3290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 3100 50  0001 C CNN
+F 3 "~" H 7450 3100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW31
+U 1 1 6A7FAD62
+P 7750 3100
+F 0 "SW31" H 7750 3381 50  0000 C CNN
+F 1 "J" H 7750 3290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 3100 50  0001 C CNN
+F 3 "~" H 7750 3100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW39
+U 1 1 6A7FAD6C
+P 8050 3100
+F 0 "SW39" H 8050 3381 50  0000 C CNN
+F 1 "R" H 8050 3290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 3100 50  0001 C CNN
+F 3 "~" H 8050 3100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW47
+U 1 1 6A7FAD76
+P 8350 3100
+F 0 "SW47" H 8350 3381 50  0000 C CNN
+F 1 "Z" H 8350 3290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8350 3100 50  0001 C CNN
+F 3 "~" H 8350 3100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW8
+U 1 1 6A7FFB53
+P 6850 3600
+F 0 "SW8" H 6850 3881 50  0000 C CNN
+F 1 "3" H 6850 3790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 3600 50  0001 C CNN
+F 3 "~" H 6850 3600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW16
+U 1 1 6A7FFB5D
+P 7150 3600
+F 0 "SW16" H 7150 3881 50  0000 C CNN
+F 1 "," H 7150 3790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 3600 50  0001 C CNN
+F 3 "~" H 7150 3600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW24
+U 1 1 6A7FFB67
+P 7450 3600
+F 0 "SW24" H 7450 3881 50  0000 C CNN
+F 1 "C" H 7450 3790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 3600 50  0001 C CNN
+F 3 "~" H 7450 3600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW32
+U 1 1 6A7FFB71
+P 7750 3600
+F 0 "SW32" H 7750 3881 50  0000 C CNN
+F 1 "K" H 7750 3790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 3600 50  0001 C CNN
+F 3 "~" H 7750 3600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW40
+U 1 1 6A7FFB7B
+P 8050 3600
+F 0 "SW40" H 8050 3881 50  0000 C CNN
+F 1 "S" H 8050 3790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 3600 50  0001 C CNN
+F 3 "~" H 8050 3600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW48
+U 1 1 6A7FFB85
+P 8350 3600
+F 0 "SW48" H 8350 3881 50  0000 C CNN
+F 1 "+" H 8350 3790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8350 3600 50  0001 C CNN
+F 3 "~" H 8350 3600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW9
+U 1 1 6A7FFB99
+P 6850 4100
+F 0 "SW9" H 6850 4381 50  0000 C CNN
+F 1 "4" H 6850 4290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 4100 50  0001 C CNN
+F 3 "~" H 6850 4100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW17
+U 1 1 6A7FFBA3
+P 7150 4100
+F 0 "SW17" H 7150 4381 50  0000 C CNN
+F 1 "<" H 7150 4290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 4100 50  0001 C CNN
+F 3 "~" H 7150 4100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW25
+U 1 1 6A7FFBAD
+P 7450 4100
+F 0 "SW25" H 7450 4381 50  0000 C CNN
+F 1 "D" H 7450 4290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 4100 50  0001 C CNN
+F 3 "~" H 7450 4100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW33
+U 1 1 6A7FFBB7
+P 7750 4100
+F 0 "SW33" H 7750 4381 50  0000 C CNN
+F 1 "L" H 7750 4290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 4100 50  0001 C CNN
+F 3 "~" H 7750 4100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW41
+U 1 1 6A7FFBC1
+P 8050 4100
+F 0 "SW41" H 8050 4381 50  0000 C CNN
+F 1 "T" H 8050 4290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 4100 50  0001 C CNN
+F 3 "~" H 8050 4100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW49
+U 1 1 6A7FFBCB
+P 8350 4100
+F 0 "SW49" H 8350 4381 50  0000 C CNN
+F 1 "-" H 8350 4290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8350 4100 50  0001 C CNN
+F 3 "~" H 8350 4100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW10
+U 1 1 6A809E3A
+P 6850 4600
+F 0 "SW10" H 6850 4881 50  0000 C CNN
+F 1 "5" H 6850 4790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 4600 50  0001 C CNN
+F 3 "~" H 6850 4600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW18
+U 1 1 6A809E44
+P 7150 4600
+F 0 "SW18" H 7150 4881 50  0000 C CNN
+F 1 "=" H 7150 4790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 4600 50  0001 C CNN
+F 3 "~" H 7150 4600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW26
+U 1 1 6A809E4E
+P 7450 4600
+F 0 "SW26" H 7450 4881 50  0000 C CNN
+F 1 "E" H 7450 4790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 4600 50  0001 C CNN
+F 3 "~" H 7450 4600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW34
+U 1 1 6A809E58
+P 7750 4600
+F 0 "SW34" H 7750 4881 50  0000 C CNN
+F 1 "M" H 7750 4790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 4600 50  0001 C CNN
+F 3 "~" H 7750 4600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW42
+U 1 1 6A809E62
+P 8050 4600
+F 0 "SW42" H 8050 4881 50  0000 C CNN
+F 1 "U" H 8050 4790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 4600 50  0001 C CNN
+F 3 "~" H 8050 4600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW50
+U 1 1 6A809E6C
+P 8350 4600
+F 0 "SW50" H 8350 4881 50  0000 C CNN
+F 1 "*" H 8350 4790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8350 4600 50  0001 C CNN
+F 3 "~" H 8350 4600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW11
+U 1 1 6A809E80
+P 6850 5100
+F 0 "SW11" H 6850 5381 50  0000 C CNN
+F 1 "6" H 6850 5290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 5100 50  0001 C CNN
+F 3 "~" H 6850 5100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW19
+U 1 1 6A809E8A
+P 7150 5100
+F 0 "SW19" H 7150 5381 50  0000 C CNN
+F 1 ">" H 7150 5290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 5100 50  0001 C CNN
+F 3 "~" H 7150 5100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW27
+U 1 1 6A809E94
+P 7450 5100
+F 0 "SW27" H 7450 5381 50  0000 C CNN
+F 1 "F" H 7450 5290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 5100 50  0001 C CNN
+F 3 "~" H 7450 5100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW35
+U 1 1 6A809E9E
+P 7750 5100
+F 0 "SW35" H 7750 5381 50  0000 C CNN
+F 1 "N" H 7750 5290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 5100 50  0001 C CNN
+F 3 "~" H 7750 5100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW43
+U 1 1 6A809EA8
+P 8050 5100
+F 0 "SW43" H 8050 5381 50  0000 C CNN
+F 1 "V" H 8050 5290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 5100 50  0001 C CNN
+F 3 "~" H 8050 5100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW51
+U 1 1 6A809EB2
+P 8350 5100
+F 0 "SW51" H 8350 5381 50  0000 C CNN
+F 1 "/" H 8350 5290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8350 5100 50  0001 C CNN
+F 3 "~" H 8350 5100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW59
+U 1 1 6A809EBC
+P 8650 5100
+F 0 "SW59" H 8650 5381 50  0000 C CNN
+F 1 "DELETE" H 8650 5290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8650 5100 50  0001 C CNN
+F 3 "~" H 8650 5100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 5100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW12
+U 1 1 6A809EC6
+P 6850 5600
+F 0 "SW12" H 6850 5881 50  0000 C CNN
+F 1 "7" H 6850 5790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 6850 5600 50  0001 C CNN
+F 3 "~" H 6850 5600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    6850 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW20
+U 1 1 6A809ED0
+P 7150 5600
+F 0 "SW20" H 7150 5881 50  0000 C CNN
+F 1 "\\" H 7150 5790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7150 5600 50  0001 C CNN
+F 3 "~" H 7150 5600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7150 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW28
+U 1 1 6A809EDA
+P 7450 5600
+F 0 "SW28" H 7450 5881 50  0000 C CNN
+F 1 "G" H 7450 5790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7450 5600 50  0001 C CNN
+F 3 "~" H 7450 5600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7450 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW36
+U 1 1 6A809EE4
+P 7750 5600
+F 0 "SW36" H 7750 5881 50  0000 C CNN
+F 1 "O" H 7750 5790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 7750 5600 50  0001 C CNN
+F 3 "~" H 7750 5600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    7750 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW44
+U 1 1 6A809EEE
+P 8050 5600
+F 0 "SW44" H 8050 5881 50  0000 C CNN
+F 1 "W" H 8050 5790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8050 5600 50  0001 C CNN
+F 3 "~" H 8050 5600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8050 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW52
+U 1 1 6A809EF8
+P 8350 5600
+F 0 "SW52" H 8350 5881 50  0000 C CNN
+F 1 "SP" H 8350 5790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX_625" H 8350 5600 50  0001 C CNN
+F 3 "~" H 8350 5600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW60
+U 1 1 6A809F02
+P 8650 5600
+F 0 "SW60" H 8650 5881 50  0000 C CNN
+F 1 "RT" H 8650 5790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8650 5600 50  0001 C CNN
+F 3 "~" H 8650 5600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 5600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW3
+U 1 1 6A82B8F3
+P 2950 6200
+F 0 "SW3" H 2950 6481 50  0000 C CNN
+F 1 "SHIFT" H 2950 6390 50  0000 C CNN
+F 2 "Switch:CHERRY_MX_125" H 2950 6200 50  0001 C CNN
+F 3 "~" H 2950 6200 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    2950 6200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW4
+U 1 1 6A82CF4A
+P 3650 6200
+F 0 "SW4" H 3650 6481 50  0000 C CNN
+F 1 "CONTROL" H 3650 6390 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 3650 6200 50  0001 C CNN
+F 3 "~" H 3650 6200 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    3650 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5000 2300 5000
+Wire Wire Line
+	2800 5000 2850 5000
+Wire Wire Line
+	2850 5000 2850 5050
+$Comp
+L power:GND #PWR?
+U 1 1 6A8320C2
+P 2850 5050
+AR Path="/6A8320C2" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/6A8320C2" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 2850 4800 50  0001 C CNN
+F 1 "GND" H 2855 4877 50  0000 C CNN
+F 2 "" H 2850 5050 50  0001 C CNN
+F 3 "" H 2850 5050 50  0001 C CNN
+	1    2850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 6100 3850 6100
+Wire Wire Line
+	3850 6100 3850 5800
+Wire Wire Line
+	3850 5800 3150 5800
+Wire Wire Line
+	3150 5800 3150 6100
+Wire Wire Line
+	3150 6100 3050 6100
+Connection ~ 3150 5800
+$Comp
+L power:+5V #PWR?
+U 1 1 6A834C21
+P 3150 5700
+AR Path="/6A834C21" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/6A834C21" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 3150 5550 50  0001 C CNN
+F 1 "+5V" H 3165 5873 50  0000 C CNN
+F 2 "" H 3150 5700 50  0001 C CNN
+F 3 "" H 3150 5700 50  0001 C CNN
+	1    3150 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6A8382A7
+P 2850 6650
+AR Path="/6A8382A7" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/6A8382A7" Ref="R?"  Part="1" 
+AR Path="/6718B9F6/6A8382A7" Ref="R1"  Part="1" 
+F 0 "R1" H 3000 6700 50  0000 C CNN
+F 1 "10K" H 3000 6600 50  0000 C CNN
+F 2 "Passive:RESA500" H 2850 6650 50  0001 C CNN
+F 3 "~" H 2850 6650 50  0001 C CNN
+F 4 "603-CFR-25JB-52-10K" H 0   0   50  0001 C CNN "Mouser"
+	1    2850 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6A8394AB
+P 3550 6650
+AR Path="/6A8394AB" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/6A8394AB" Ref="R?"  Part="1" 
+AR Path="/6718B9F6/6A8394AB" Ref="R3"  Part="1" 
+F 0 "R3" H 3700 6700 50  0000 C CNN
+F 1 "10K" H 3750 6600 50  0000 C CNN
+F 2 "Passive:RESA500" H 3550 6650 50  0001 C CNN
+F 3 "~" H 3550 6650 50  0001 C CNN
+F 4 "603-CFR-25JB-52-10K" H 0   0   50  0001 C CNN "Mouser"
+	1    3550 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6300 2850 6350
+Wire Wire Line
+	3550 6300 3550 6350
+Wire Wire Line
+	2850 6750 2850 6850
+Wire Wire Line
+	2850 6850 3250 6850
+Wire Wire Line
+	3550 6850 3550 6750
+Wire Wire Line
+	3250 6850 3250 6950
+Connection ~ 3250 6850
+Wire Wire Line
+	3250 6850 3550 6850
+$Comp
+L power:GND #PWR?
+U 1 1 6A83CE21
+P 3250 6950
+AR Path="/6A83CE21" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/6A83CE21" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 3250 6700 50  0001 C CNN
+F 1 "GND" H 3255 6777 50  0000 C CNN
+F 2 "" H 3250 6950 50  0001 C CNN
+F 3 "" H 3250 6950 50  0001 C CNN
+	1    3250 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6350 3300 6350
+Wire Wire Line
+	3300 6350 3300 4650
+Wire Wire Line
+	3300 4650 3600 4650
+Connection ~ 2850 6350
+Wire Wire Line
+	3600 4450 3400 4450
+Wire Wire Line
+	3400 4450 3400 6350
+Wire Wire Line
+	3400 6350 3550 6350
+Connection ~ 3550 6350
+Wire Wire Line
+	3550 6350 3550 6550
+Wire Wire Line
+	7000 1550 5200 1550
+Wire Wire Line
+	5200 1550 5200 2450
+Wire Wire Line
+	5200 2450 4600 2450
+Wire Wire Line
+	7000 1550 7000 2000
+Wire Wire Line
+	4600 2550 5300 2550
+Wire Wire Line
+	5300 2550 5300 1400
+Wire Wire Line
+	5300 1400 7300 1400
+Wire Wire Line
+	7300 1400 7300 2000
+Wire Wire Line
+	4600 2650 5400 2650
+Wire Wire Line
+	5400 2650 5400 1250
+Wire Wire Line
+	5400 1250 7600 1250
+Wire Wire Line
+	7600 1250 7600 2000
+Wire Wire Line
+	4600 2750 5500 2750
+Wire Wire Line
+	5500 2750 5500 1100
+Wire Wire Line
+	5500 1100 7900 1100
+Wire Wire Line
+	7900 1100 7900 2000
+Wire Wire Line
+	4600 2850 5600 2850
+Wire Wire Line
+	5600 2850 5600 950 
+Wire Wire Line
+	5600 950  8200 950 
+Wire Wire Line
+	8200 950  8200 2000
+Wire Wire Line
+	4600 2950 5700 2950
+Wire Wire Line
+	5700 2950 5700 800 
+Wire Wire Line
+	5700 800  8500 800 
+Wire Wire Line
+	8500 800  8500 2000
+Wire Wire Line
+	4600 3150 5800 3150
+Wire Wire Line
+	5800 3150 5800 650 
+Wire Wire Line
+	5800 650  8800 650 
+Wire Wire Line
+	8800 650  8800 2000
+Wire Wire Line
+	4600 3950 6200 3950
+Wire Wire Line
+	6200 3950 6200 2250
+Wire Wire Line
+	6200 2250 6750 2250
+Wire Wire Line
+	4600 4050 6300 4050
+Wire Wire Line
+	6300 4050 6300 2750
+Wire Wire Line
+	6300 2750 6750 2750
+Wire Wire Line
+	8550 2750 8550 2700
+Wire Wire Line
+	8550 2250 8550 2200
+Wire Wire Line
+	7050 2250 7350 2250
+Wire Wire Line
+	4600 4150 6400 4150
+Wire Wire Line
+	6400 4150 6400 3250
+Wire Wire Line
+	6400 3250 6750 3250
+Wire Wire Line
+	4600 4250 6500 4250
+Wire Wire Line
+	6500 4250 6500 3750
+Wire Wire Line
+	6500 3750 6750 3750
+Wire Wire Line
+	4600 4350 6600 4350
+Wire Wire Line
+	6600 4350 6600 4250
+Wire Wire Line
+	6600 4250 6750 4250
+Wire Wire Line
+	4600 4450 6600 4450
+Wire Wire Line
+	6600 4450 6600 4750
+Wire Wire Line
+	6600 4750 6750 4750
+Wire Wire Line
+	4600 4550 6500 4550
+Wire Wire Line
+	6500 4550 6500 5250
+Wire Wire Line
+	6500 5250 6750 5250
+Wire Wire Line
+	8550 5250 8550 5200
+Wire Wire Line
+	4600 4650 6400 4650
+Wire Wire Line
+	6400 4650 6400 5750
+Wire Wire Line
+	6400 5750 6750 5750
+Wire Wire Line
+	8550 5750 8550 5700
+Wire Wire Line
+	6950 2000 7000 2000
+Connection ~ 7000 2000
+Wire Wire Line
+	7000 2000 7000 2500
+Wire Wire Line
+	7250 2000 7300 2000
+Connection ~ 7300 2000
+Wire Wire Line
+	7300 2000 7300 2500
+Wire Wire Line
+	7350 2200 7350 2250
+Connection ~ 7350 2250
+Wire Wire Line
+	7350 2250 7650 2250
+Wire Wire Line
+	7650 2200 7650 2250
+Connection ~ 7650 2250
+Wire Wire Line
+	7650 2250 7950 2250
+Wire Wire Line
+	7950 2200 7950 2250
+Connection ~ 7950 2250
+Wire Wire Line
+	7950 2250 8250 2250
+Wire Wire Line
+	8250 2200 8250 2250
+Connection ~ 8250 2250
+Wire Wire Line
+	8250 2250 8550 2250
+Wire Wire Line
+	8250 2700 8250 2750
+Connection ~ 8250 2750
+Wire Wire Line
+	8250 2750 8550 2750
+Wire Wire Line
+	7950 2700 7950 2750
+Connection ~ 7950 2750
+Wire Wire Line
+	7950 2750 8250 2750
+Wire Wire Line
+	7650 2700 7650 2750
+Connection ~ 7650 2750
+Wire Wire Line
+	7650 2750 7950 2750
+Wire Wire Line
+	7350 2700 7350 2750
+Connection ~ 7350 2750
+Wire Wire Line
+	7350 2750 7650 2750
+Wire Wire Line
+	7050 2700 7050 2750
+Connection ~ 7050 2750
+Wire Wire Line
+	7050 2750 7350 2750
+Wire Wire Line
+	6750 2700 6750 2750
+Connection ~ 6750 2750
+Wire Wire Line
+	6750 2750 7050 2750
+Wire Wire Line
+	7550 2000 7600 2000
+Connection ~ 7600 2000
+Wire Wire Line
+	7600 2000 7600 2500
+Wire Wire Line
+	7850 2000 7900 2000
+Connection ~ 7900 2000
+Wire Wire Line
+	7900 2000 7900 2500
+Wire Wire Line
+	8150 2000 8200 2000
+Connection ~ 8200 2000
+Wire Wire Line
+	8200 2000 8200 2500
+Wire Wire Line
+	8450 2000 8500 2000
+Connection ~ 8500 2000
+Wire Wire Line
+	8500 2000 8500 2500
+Wire Wire Line
+	8750 2000 8800 2000
+Connection ~ 8800 2000
+Wire Wire Line
+	8800 2000 8800 2500
+Wire Wire Line
+	8750 2500 8800 2500
+Connection ~ 8800 2500
+Wire Wire Line
+	8450 2500 8500 2500
+Connection ~ 8500 2500
+Wire Wire Line
+	8500 2500 8500 3000
+Wire Wire Line
+	8150 2500 8200 2500
+Connection ~ 8200 2500
+Wire Wire Line
+	8200 2500 8200 3000
+Wire Wire Line
+	7850 2500 7900 2500
+Connection ~ 7900 2500
+Wire Wire Line
+	7900 2500 7900 3000
+Wire Wire Line
+	7550 2500 7600 2500
+Connection ~ 7600 2500
+Wire Wire Line
+	7600 2500 7600 3000
+Wire Wire Line
+	7250 2500 7300 2500
+Connection ~ 7300 2500
+Wire Wire Line
+	7300 2500 7300 3000
+Wire Wire Line
+	6950 2500 7000 2500
+Connection ~ 7000 2500
+Wire Wire Line
+	7000 2500 7000 3000
+Wire Wire Line
+	6750 3200 6750 3250
+Connection ~ 6750 3250
+Wire Wire Line
+	6750 3250 7050 3250
+Wire Wire Line
+	6950 3000 7000 3000
+Connection ~ 7000 3000
+Wire Wire Line
+	7000 3000 7000 3500
+Wire Wire Line
+	7050 3200 7050 3250
+Connection ~ 7050 3250
+Wire Wire Line
+	7050 3250 7350 3250
+Wire Wire Line
+	7250 3000 7300 3000
+Connection ~ 7300 3000
+Wire Wire Line
+	7300 3000 7300 3500
+Wire Wire Line
+	7350 3200 7350 3250
+Connection ~ 7350 3250
+Wire Wire Line
+	7350 3250 7650 3250
+Wire Wire Line
+	7650 3200 7650 3250
+Connection ~ 7650 3250
+Wire Wire Line
+	7650 3250 7950 3250
+Wire Wire Line
+	7950 3200 7950 3250
+Connection ~ 7950 3250
+Wire Wire Line
+	7950 3250 8250 3250
+Wire Wire Line
+	8250 3200 8250 3250
+Wire Wire Line
+	7550 3000 7600 3000
+Connection ~ 7600 3000
+Wire Wire Line
+	7600 3000 7600 3500
+Wire Wire Line
+	7850 3000 7900 3000
+Connection ~ 7900 3000
+Wire Wire Line
+	7900 3000 7900 3500
+Wire Wire Line
+	8150 3000 8200 3000
+Connection ~ 8200 3000
+Wire Wire Line
+	8200 3000 8200 3500
+Wire Wire Line
+	8450 3000 8500 3000
+Connection ~ 8500 3000
+Wire Wire Line
+	8500 3000 8500 3500
+Wire Wire Line
+	6750 3700 6750 3750
+Connection ~ 6750 3750
+Wire Wire Line
+	6750 3750 7050 3750
+Wire Wire Line
+	6950 3500 7000 3500
+Connection ~ 7000 3500
+Wire Wire Line
+	7000 3500 7000 4000
+Wire Wire Line
+	7050 3700 7050 3750
+Connection ~ 7050 3750
+Wire Wire Line
+	7050 3750 7350 3750
+Wire Wire Line
+	7350 3700 7350 3750
+Connection ~ 7350 3750
+Wire Wire Line
+	7350 3750 7650 3750
+Wire Wire Line
+	7650 3700 7650 3750
+Connection ~ 7650 3750
+Wire Wire Line
+	7650 3750 7950 3750
+Wire Wire Line
+	7250 3500 7300 3500
+Connection ~ 7300 3500
+Wire Wire Line
+	7300 3500 7300 4000
+Wire Wire Line
+	7550 3500 7600 3500
+Connection ~ 7600 3500
+Wire Wire Line
+	7600 3500 7600 4000
+Wire Wire Line
+	7850 3500 7900 3500
+Connection ~ 7900 3500
+Wire Wire Line
+	7900 3500 7900 4000
+Wire Wire Line
+	8150 3500 8200 3500
+Connection ~ 8200 3500
+Wire Wire Line
+	8200 3500 8200 4000
+Wire Wire Line
+	8450 3500 8500 3500
+Connection ~ 8500 3500
+Wire Wire Line
+	8500 3500 8500 4000
+Wire Wire Line
+	8450 4000 8500 4000
+Connection ~ 8500 4000
+Wire Wire Line
+	8500 4000 8500 4500
+Wire Wire Line
+	8150 4000 8200 4000
+Connection ~ 8200 4000
+Wire Wire Line
+	8200 4000 8200 4500
+Wire Wire Line
+	7850 4000 7900 4000
+Connection ~ 7900 4000
+Wire Wire Line
+	7900 4000 7900 4500
+Wire Wire Line
+	7550 4000 7600 4000
+Connection ~ 7600 4000
+Wire Wire Line
+	7600 4000 7600 4500
+Wire Wire Line
+	7250 4000 7300 4000
+Connection ~ 7300 4000
+Wire Wire Line
+	7300 4000 7300 4500
+Wire Wire Line
+	6950 4000 7000 4000
+Connection ~ 7000 4000
+Wire Wire Line
+	7000 4000 7000 4500
+Wire Wire Line
+	6950 4500 7000 4500
+Connection ~ 7000 4500
+Wire Wire Line
+	7000 4500 7000 5000
+Wire Wire Line
+	7250 4500 7300 4500
+Connection ~ 7300 4500
+Wire Wire Line
+	7300 4500 7300 5000
+Wire Wire Line
+	7550 4500 7600 4500
+Connection ~ 7600 4500
+Wire Wire Line
+	7600 4500 7600 5000
+Wire Wire Line
+	7850 4500 7900 4500
+Connection ~ 7900 4500
+Wire Wire Line
+	7900 4500 7900 5000
+Wire Wire Line
+	8150 4500 8200 4500
+Connection ~ 8200 4500
+Wire Wire Line
+	8200 4500 8200 5000
+Wire Wire Line
+	8450 4500 8500 4500
+Connection ~ 8500 4500
+Wire Wire Line
+	8500 4500 8500 5000
+Wire Wire Line
+	8750 5000 8800 5000
+Connection ~ 8800 5000
+Wire Wire Line
+	8800 5000 8800 5500
+Wire Wire Line
+	8450 5000 8500 5000
+Connection ~ 8500 5000
+Wire Wire Line
+	8500 5000 8500 5500
+Wire Wire Line
+	8750 5500 8800 5500
+Wire Wire Line
+	8450 5500 8500 5500
+Wire Wire Line
+	8150 5000 8200 5000
+Connection ~ 8200 5000
+Wire Wire Line
+	8200 5000 8200 5500
+Wire Wire Line
+	7850 5000 7900 5000
+Connection ~ 7900 5000
+Wire Wire Line
+	7900 5000 7900 5500
+Wire Wire Line
+	7550 5000 7600 5000
+Connection ~ 7600 5000
+Wire Wire Line
+	7600 5000 7600 5500
+Wire Wire Line
+	7250 5000 7300 5000
+Connection ~ 7300 5000
+Wire Wire Line
+	7300 5000 7300 5500
+Wire Wire Line
+	6950 5000 7000 5000
+Connection ~ 7000 5000
+Wire Wire Line
+	7000 5000 7000 5500
+Wire Wire Line
+	6950 5500 7000 5500
+Wire Wire Line
+	7250 5500 7300 5500
+Wire Wire Line
+	7550 5500 7600 5500
+Wire Wire Line
+	7850 5500 7900 5500
+Wire Wire Line
+	8150 5500 8200 5500
+Wire Wire Line
+	8250 5700 8250 5750
+Connection ~ 8250 5750
+Wire Wire Line
+	8250 5750 8550 5750
+Wire Wire Line
+	8250 5250 8250 5200
+Connection ~ 8250 5250
+Wire Wire Line
+	8250 5250 8550 5250
+Wire Wire Line
+	8250 4750 8250 4700
+Wire Wire Line
+	8250 4250 8250 4200
+Wire Wire Line
+	8250 3750 8250 3700
+Wire Wire Line
+	7950 3700 7950 3750
+Connection ~ 7950 3750
+Wire Wire Line
+	7950 3750 8250 3750
+Wire Wire Line
+	7950 5750 7950 5700
+Connection ~ 7950 5750
+Wire Wire Line
+	7950 5750 8250 5750
+Wire Wire Line
+	7950 5200 7950 5250
+Connection ~ 7950 5250
+Wire Wire Line
+	7950 5250 8250 5250
+Wire Wire Line
+	7950 4700 7950 4750
+Connection ~ 7950 4750
+Wire Wire Line
+	7950 4750 8250 4750
+Wire Wire Line
+	7950 4200 7950 4250
+Connection ~ 7950 4250
+Wire Wire Line
+	7950 4250 8250 4250
+Wire Wire Line
+	6750 4200 6750 4250
+Connection ~ 6750 4250
+Wire Wire Line
+	6750 4250 7050 4250
+Wire Wire Line
+	6750 4700 6750 4750
+Connection ~ 6750 4750
+Wire Wire Line
+	6750 4750 7050 4750
+Wire Wire Line
+	6750 5200 6750 5250
+Connection ~ 6750 5250
+Wire Wire Line
+	6750 5250 7050 5250
+Wire Wire Line
+	6750 5700 6750 5750
+Connection ~ 6750 5750
+Wire Wire Line
+	6750 5750 7050 5750
+Wire Wire Line
+	7050 5700 7050 5750
+Connection ~ 7050 5750
+Wire Wire Line
+	7050 5750 7350 5750
+Wire Wire Line
+	7350 5700 7350 5750
+Connection ~ 7350 5750
+Wire Wire Line
+	7350 5750 7650 5750
+Wire Wire Line
+	7650 5700 7650 5750
+Connection ~ 7650 5750
+Wire Wire Line
+	7650 5750 7950 5750
+Wire Wire Line
+	7650 5200 7650 5250
+Connection ~ 7650 5250
+Wire Wire Line
+	7650 5250 7950 5250
+Wire Wire Line
+	7350 5200 7350 5250
+Connection ~ 7350 5250
+Wire Wire Line
+	7350 5250 7650 5250
+Wire Wire Line
+	7050 5200 7050 5250
+Connection ~ 7050 5250
+Wire Wire Line
+	7050 5250 7350 5250
+Wire Wire Line
+	7050 4700 7050 4750
+Connection ~ 7050 4750
+Wire Wire Line
+	7050 4750 7350 4750
+Wire Wire Line
+	7350 4700 7350 4750
+Connection ~ 7350 4750
+Wire Wire Line
+	7350 4750 7650 4750
+Wire Wire Line
+	7650 4700 7650 4750
+Connection ~ 7650 4750
+Wire Wire Line
+	7650 4750 7950 4750
+Wire Wire Line
+	7650 4250 7650 4200
+Connection ~ 7650 4250
+Wire Wire Line
+	7650 4250 7950 4250
+Wire Wire Line
+	7650 4250 7350 4250
+Wire Wire Line
+	7350 4250 7350 4200
+Connection ~ 7350 4250
+Wire Wire Line
+	7050 4200 7050 4250
+Connection ~ 7050 4250
+Wire Wire Line
+	7050 4250 7350 4250
+$Comp
+L Device:R_Small_US R?
+U 1 1 6ACDAAAB
+P 2950 4350
+AR Path="/6ACDAAAB" Ref="R?"  Part="1" 
+AR Path="/69A1B94A/6ACDAAAB" Ref="R?"  Part="1" 
+AR Path="/6718B9F6/6ACDAAAB" Ref="R2"  Part="1" 
+F 0 "R2" H 3100 4400 50  0000 C CNN
+F 1 "100K" H 3150 4300 50  0000 C CNN
+F 2 "Passive:RESA500" H 2950 4350 50  0001 C CNN
+F 3 "~" H 2950 4350 50  0001 C CNN
+F 4 "603-CFR-25JB-52-100K" H 0   0   50  0001 C CNN "Mouser"
+	1    2950 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4250 2950 3750
+Connection ~ 2950 3750
+Wire Wire Line
+	2950 4450 2950 4550
+Wire Wire Line
+	2950 4550 3250 4550
+Wire Wire Line
+	3250 4550 3250 4350
+Wire Wire Line
+	3250 4350 3600 4350
+Wire Wire Line
+	2950 4550 2950 4600
+Connection ~ 2950 4550
+$Comp
+L Device:C_Small C8
+U 1 1 6AD20897
+P 2950 4700
+F 0 "C8" H 3042 4746 50  0000 L CNN
+F 1 "0.1uF" H 3042 4655 50  0000 L CNN
+F 2 "Passive:CAPAC200" H 2950 4700 50  0001 C CNN
+F 3 "~" H 2950 4700 50  0001 C CNN
+F 4 "581-SA105E104M" H 0   0   50  0001 C CNN "Mouser"
+	1    2950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4800 2950 4850
+$Comp
+L power:GND #PWR?
+U 1 1 6AD39A19
+P 2950 4850
+AR Path="/6AD39A19" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/6AD39A19" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 2950 4600 50  0001 C CNN
+F 1 "GND" H 2955 4677 50  0000 C CNN
+F 2 "" H 2950 4850 50  0001 C CNN
+F 3 "" H 2950 4850 50  0001 C CNN
+	1    2950 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 6AD3AA2B
+P 4450 1750
+F 0 "C9" H 4542 1796 50  0000 L CNN
+F 1 "0.1uF" H 4542 1705 50  0000 L CNN
+F 2 "Passive:CAPAC200" H 4450 1750 50  0001 C CNN
+F 3 "~" H 4450 1750 50  0001 C CNN
+F 4 "581-SA105E104M" H 0   0   50  0001 C CNN "Mouser"
+	1    4450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6AD3B198
+P 4450 1600
+AR Path="/6AD3B198" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/6AD3B198" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 4450 1450 50  0001 C CNN
+F 1 "+5V" H 4465 1773 50  0000 C CNN
+F 2 "" H 4450 1600 50  0001 C CNN
+F 3 "" H 4450 1600 50  0001 C CNN
+	1    4450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6AD3B4A6
+P 4450 1900
+AR Path="/6AD3B4A6" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/6AD3B4A6" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 4450 1650 50  0001 C CNN
+F 1 "GND" H 4455 1727 50  0000 C CNN
+F 2 "" H 4450 1900 50  0001 C CNN
+F 3 "" H 4450 1900 50  0001 C CNN
+	1    4450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 1850 4450 1900
+Wire Wire Line
+	4450 1600 4450 1650
+NoConn ~ 4600 3050
+NoConn ~ 4600 3250
+NoConn ~ 4600 3350
+NoConn ~ 4600 3450
+Wire Wire Line
+	3600 4550 3500 4550
+Wire Wire Line
+	3500 4550 3500 4750
+$Comp
+L power:GND #PWR?
+U 1 1 6AFB9D61
+P 3500 4750
+AR Path="/6AFB9D61" Ref="#PWR?"  Part="1" 
+AR Path="/6718B9F6/6AFB9D61" Ref="#PWR0168"  Part="1" 
+F 0 "#PWR0168" H 3500 4500 50  0001 C CNN
+F 1 "GND" H 3505 4577 50  0000 C CNN
+F 2 "" H 3500 4750 50  0001 C CNN
+F 3 "" H 3500 4750 50  0001 C CNN
+	1    3500 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L switches:SW_TACT SW2
+U 1 1 6B67D228
+P 2600 4900
+F 0 "SW2" H 2600 5105 50  0000 C CNN
+F 1 "RESET" H 2600 5014 50  0000 C CNN
+F 2 "Switch:ESWITCH_TL1105" H 1975 5075 50  0001 C CNN
+F 3 "~" H 1975 5075 50  0001 C CNN
+F 4 "612-TL1105B" H 2600 4900 50  0001 C CNN "Mouser"
+	1    2600 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 6550 2850 6350
+NoConn ~ 2400 4900
+NoConn ~ 2800 4900
+$Comp
+L mech:mech_part M1
+U 1 1 6BB49754
+P 8350 5950
+F 0 "M1" H 8300 6000 50  0000 L CNN
+F 1 "Stiffener" H 8250 5750 50  0000 L CNN
+F 2 "Switch:CHERRY_ST2" H 8350 5950 50  0001 C CNN
+F 3 "" H 8350 5950 50  0001 C CNN
+F 4 "540-0G990743" H 0   0   50  0001 C CNN "Mouser"
+	1    8350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW55
+U 1 1 6BB50339
+P 8650 3100
+F 0 "SW55" H 8650 3381 50  0000 C CNN
+F 1 "UP" H 8650 3290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8650 3100 50  0001 C CNN
+F 3 "~" H 8650 3100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 3100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW56
+U 1 1 6BB51373
+P 8650 3600
+F 0 "SW56" H 8650 3881 50  0000 C CNN
+F 1 "RIGHT" H 8650 3790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8650 3600 50  0001 C CNN
+F 3 "~" H 8650 3600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW57
+U 1 1 6BB51A23
+P 8650 4100
+F 0 "SW57" H 8650 4381 50  0000 C CNN
+F 1 "LEFT" H 8650 4290 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8650 4100 50  0001 C CNN
+F 3 "~" H 8650 4100 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push_45deg SW58
+U 1 1 6BB5221A
+P 8650 4600
+F 0 "SW58" H 8650 4881 50  0000 C CNN
+F 1 "DOWN" H 8650 4790 50  0000 C CNN
+F 2 "Switch:CHERRY_MX" H 8650 4600 50  0001 C CNN
+F 3 "~" H 8650 4600 50  0001 C CNN
+F 4 "540-MX1A-11NW" H 0   0   50  0001 C CNN "Mouser"
+	1    8650 4600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 2500 8800 3000
+Wire Wire Line
+	8250 4750 8550 4750
+Wire Wire Line
+	8550 4750 8550 4700
+Connection ~ 8250 4750
+Wire Wire Line
+	8750 4500 8800 4500
+Connection ~ 8800 4500
+Wire Wire Line
+	8800 4500 8800 5000
+Wire Wire Line
+	8250 4250 8550 4250
+Wire Wire Line
+	8550 4250 8550 4200
+Connection ~ 8250 4250
+Wire Wire Line
+	8750 4000 8800 4000
+Connection ~ 8800 4000
+Wire Wire Line
+	8800 4000 8800 4500
+Wire Wire Line
+	8250 3750 8550 3750
+Wire Wire Line
+	8550 3750 8550 3700
+Connection ~ 8250 3750
+Wire Wire Line
+	8750 3500 8800 3500
+Connection ~ 8800 3500
+Wire Wire Line
+	8800 3500 8800 4000
+Wire Wire Line
+	8250 3250 8550 3250
+Wire Wire Line
+	8550 3250 8550 3200
+Connection ~ 8250 3250
+Wire Wire Line
+	8750 3000 8800 3000
+Connection ~ 8800 3000
+Wire Wire Line
+	8800 3000 8800 3500
+Wire Wire Line
+	3150 5700 3150 5800
+Text Notes 9100 7100 0    50   ~ 0
+This work is licensed under the Creative Commons\nAttribution-ShareAlike 4.0 International License.\nTo view a copy of this license, visit \nhttp://creativecommons.org/licenses/by-sa/4.0/\nor send a letter to Creative Commons, PO Box 1866,\nMountain View, CA 94042, USA.
+Text Notes 7100 6750 0    100  ~ 20
+COMIX-35
+Text Notes 7100 6950 0    50   ~ 0
+Keyboard Section\nBy @TubeTimeUS
+Wire Bus Line
+	3250 2550 3250 3250
+$EndSCHEMATC
