@@ -285,10 +285,10 @@ L 74xx:74LS04 U4
 U 6 1 6570D02D
 P 3750 7500
 F 0 "U4" H 3750 7817 50  0000 C CNN
-F 1 "74HC04" H 3750 7726 50  0000 C CNN
+F 1 "74HCU04" H 3750 7726 50  0000 C CNN
 F 2 "Active:DIP254P762X635-14" H 3750 7500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3750 7500 50  0001 C CNN
-F 4 "595-SN74HC04N" H 0   0   50  0001 C CNN "Mouser"
+F 4 "595-SN74HCU04N" H 0   0   50  0001 C CNN "Mouser"
 	6    3750 7500
 	1    0    0    -1  
 $EndComp
@@ -297,10 +297,10 @@ L 74xx:74LS04 U4
 U 7 1 6570E50D
 P 5950 6300
 F 0 "U4" H 6050 5950 50  0000 L CNN
-F 1 "74HC04" H 6050 5850 50  0000 L CNN
+F 1 "74HCU04" H 6050 5850 50  0000 L CNN
 F 2 "Active:DIP254P762X635-14" H 5950 6300 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5950 6300 50  0001 C CNN
-F 4 "595-SN74HC04N" H 0   0   50  0001 C CNN "Mouser"
+F 4 "595-SN74HCU04N" H 0   0   50  0001 C CNN "Mouser"
 	7    5950 6300
 	1    0    0    -1  
 $EndComp
@@ -1110,6 +1110,12 @@ Wire Wire Line
 	3350 1000 3350 1100
 Wire Wire Line
 	3350 1300 3350 1400
+Text Notes 9100 7100 0    50   ~ 0
+This work is licensed under the Creative Commons\nAttribution-ShareAlike 4.0 International License.\nTo view a copy of this license, visit \nhttp://creativecommons.org/licenses/by-sa/4.0/\nor send a letter to Creative Commons, PO Box 1866,\nMountain View, CA 94042, USA.
+Text Notes 7100 6750 0    100  ~ 20
+COMIX-35
+Text Notes 7100 6950 0    50   ~ 0
+Top Level\nBy @TubeTimeUS
 Wire Bus Line
 	1200 3450 1200 4150
 Wire Bus Line
@@ -1118,10 +1124,4 @@ Wire Bus Line
 	3650 2050 3650 4250
 Wire Bus Line
 	1000 2050 1000 4250
-Text Notes 9100 7100 0    50   ~ 0
-This work is licensed under the Creative Commons\nAttribution-ShareAlike 4.0 International License.\nTo view a copy of this license, visit \nhttp://creativecommons.org/licenses/by-sa/4.0/\nor send a letter to Creative Commons, PO Box 1866,\nMountain View, CA 94042, USA.
-Text Notes 7100 6750 0    100  ~ 20
-COMIX-35
-Text Notes 7100 6950 0    50   ~ 0
-Top Level\nBy @TubeTimeUS
 $EndSCHEMATC

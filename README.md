@@ -43,8 +43,10 @@ layout which has the key cap unit sizes marked below each key.
 I have not included part numbers for the 0.1" headers which usually come as a
 long strip that you break into the appropriately-sized sections.
 
-Most other components may be safely substituted. The one exception is U4 which
-must be a 74HC04 in order for the oscillators to operate. 
+Most other components may be safely substituted. U4 is a little tricky. It
+should be a 74HCU04 in order for the oscillators to operate, but in a pinch,
+a 74HC04 will also work. A 74LS04 or a part from another logic family will
+not work.
 
 ## Assembly notes
 Since the standard COMX-35 ROM configures the CDP1869 to use extra-tall
